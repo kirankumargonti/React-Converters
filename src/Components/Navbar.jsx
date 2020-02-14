@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   render() {
     return (
       <nav class="navbar navbar-expand-md navbar-light fixed-top">
         <div className="container">
-          <Link class="navbar-brand" to="/">
+          <h1 class="navbar-brand">
             Convert Anything
-          </Link>
+          </h1>
           <button
             class="navbar-toggler d-lg-none"
             type="button"
@@ -23,21 +22,21 @@ class Navbar extends Component {
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item dropdown">
-        <Link class="nav-link dropdown-toggle" to="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Converters</Link>
-        <div class="dropdown-menu" aria-labelledby="dropdownId">
-          <Link class="dropdown-item nav-active bg-warning" to="/">Currency Converter</Link>
-          <Link class="dropdown-item" to="/">Percentage Converter</Link>
-        </div>
-      </li>
+              <p class="nav-link dropdown-toggle" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Convert to</p>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <p class="dropdown-item" >Currency Converter</p>
+                <p class="dropdown-item" >Percentage Converter</p>
+              </div>
+            </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/">
+                <p class="nav-link">
                  About
-                </Link>
+                </p>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/">
+                <p class="nav-link">
                   Contact
-                </Link>
+                </p>
               </li>
             </ul>
           </div>
