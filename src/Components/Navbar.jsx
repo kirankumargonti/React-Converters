@@ -22,7 +22,7 @@ class Navbar extends Component {
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item dropdown">
-              <p class="nav-link dropdown-toggle" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Convert to</p>
+              <p class="nav-link dropdown-toggle" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Converters</p>
               <div class="dropdown-menu" aria-labelledby="dropdownId">
                 <p class="dropdown-item" >Currency Converter</p>
                 <p class="dropdown-item" >Percentage Converter</p>

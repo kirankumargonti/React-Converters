@@ -14,7 +14,7 @@
 
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow-x: hidden;
 }
 
@@ -96,6 +96,9 @@ nav {
 @media (max-width: 576px) {
     .banner {
         text-align: center;
+        .banner-left {
+          height: 60vh;
+        }
         select {
             margin-right: 5px;
         }
@@ -107,5 +110,8 @@ nav {
 @media (max-width: 768px) {
     .banner {
         height: auto;
+    }
+    .banner-left {
+      height: 60vh;
     }
 }

@@ -14,6 +14,10 @@ export default function Home() {
   const [amountInFromCurrency, setAmountInFromCurrency] = useState(true);
 
   // Percentage Converter
+  const [cgpa] = useState({
+    cgpaLabelName:"CGPA",
+    percentageLabelName: "%"
+  });
   const [percentage, setPercentage] = useState(1);
   const [valueInFromPercentage, setValueInFromPercentage] = useState(true);
 
@@ -99,7 +103,7 @@ export default function Home() {
             </div>
             <div className="col-lg-6">
               <div className="banner-right">
-                <h1>Convert Currency</h1>
+                <h1>Currency Converter</h1>
                 <CurrencyConverter
                   currencyOptions={currencyOptions}
                   selectedCurrency={fromCurrency}
@@ -116,15 +120,18 @@ export default function Home() {
                   amount={toAmount}
                 />
 
-                <h1>Convert CGPA to %</h1>
+                <h1>CGPA to % Converter</h1>
 
                 <PercentageConverter
                   percentage={fromPercentage}
                   onChangePercentage={handleFromPercentage}
+                  cgpa ={cgpa.cgpaLabelName}
+
                 />
                 <PercentageConverter
                   percentage={toPercentage}
                   onChangePercentage={handleToPercentage}
+                  cgpa ={cgpa.percentageLabelName}
                 />
               </div>
             </div>
